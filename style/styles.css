@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+ }
+
+:root{
+    --overlay-blue: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
+    --overlay-opacity: linear-gradient(315deg, rgba(214, 230, 254, 0.25) 40%, rgba(214, 252, 254, 0.25) 100%);
+    --blue: #345FF6;
+    --gunmetal: #253347;
+    --dark-electric-blue: #5E6E85;
+    --borders: #D8E2E7;
+    --white: #ffffff;
+}
+
+.inter-bold{
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.heading-l{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 110%;
+    color: var(--gunmetal);
+    letter-spacing: -0.15rem;
+}
+
+.heading-m{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.heading-s{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.body-m{
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--dark-electric-blue);
+}
+
+.body-s{
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block;
+}
+
+.space-imp-wel{
+    margin-top: 8%;
+    margin-bottom: 0%;
+}
+
+.space-imp-sp{
+    margin-top: 14%;
+}
+
+.hero{
+    display: flex;
+    position: relative;
+}
+
+.side-container{
+    width: 60%;
+    background: var(--overlay-blue);
+    margin-left: 1.5rem;
+    border-radius: 0rem 0rem 2.186rem 2.185rem;
+}
+
+.side-elements{
+    padding: 3.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding-bottom: 12rem;
+}
+
+.logo{
+    width: 4rem;
+}
+
+.side-elements-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.side-elements-text h1{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 110%;
+    color: var(--gunmetal);
+}
+
+.side-elements-text p{
+    width: 33rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--dark-electric-blue);
+}
+
+.bmi-card{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    background: var(--white);
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+    width: 38rem;
+    border-radius: 1rem;
+}
+
+.title{
+    padding: 1rem 2rem !important;
+    padding-top: 2rem !important;
+}
+
+.radio-box p{
+    padding: 1rem 1.4rem;
+    padding-bottom: 0rem;
+}
+
+.radios{
+    padding: 0rem 2rem;
+    display: flex;
+    gap: 10rem;
+}
+
+.radio-box{
+    display: flex;
+}
+
+input[type="radio"]{
+    width: 2.2rem;
+    background-color: green;
+    border: 1px solid black;
+}
+
+input[type="radio"]:checked{
+    background-color: gray;
+}
+
+input[type="radio"]:hover{
+    cursor: pointer;
+    border-color: red;
+}
+
+input[type="radio"]::before{
+    content: "";
+    width: 15px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em red;
+}
+
+input[type="radio"]:checked::before{
+    transform: scale(1);
+}
+
+
+.radio-box p{
+    margin-left: -0.5rem;
+}
+
+form{
+    display: flex;
+    padding: 2rem 2rem;
+    gap: 2.3rem;
+    padding-bottom: 0rem;
+}
+
+.imperial{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 0rem;
+    padding-bottom: 0rem;
+}
+
+.size-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.imperial-input{
+    display: flex;
+    gap: 2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.attach, .input-field{
+position: relative;
+display: block;
+padding-bottom: 2rem;
+box-sizing: border-box;
+}
+
+.attach::after{
+    content: attr(data-domain);
+    position: absolute;
+    top: 21%;
+    right: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.input-field{
+    margin-top: 0.4rem;
+    padding: 1rem 1.4rem;
+    width: 16rem;
+    border-radius: 0.75rem;
+    border: 2px solid #D8E2E7;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.input-field::placeholder{
+    color: var(--gunmetal);
+    opacity: 0.25;
+}
+
+.input-field:focus{
+    outline: none;
+    border: 2px solid var(--blue) !important;
+}
+
+.results{
+    margin: 0rem 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+    padding: 1.6rem 1.8rem;
+    padding-bottom: 1rem;
+    color: var(--white);
+    border-radius: 1rem 62.4375rem 62.4375rem 1rem;
+}
+
+.results h5{
+    padding-bottom: 0.5rem;
+    letter-spacing: -0.075rem;
+}
+
+.calculated-answer{
+    margin: 0rem 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+    color: var(--white);
+    border-radius: 1rem 62.4375rem 62.4375rem 1rem;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    align-self: stretch;
+}
+
+.bmi{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1 0 0;
+}
+
+.bmi h1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 110%;
+    color: var(--gunmetal);
+    letter-spacing: -0.2rem;
+    color: var(--white);
+}
+
+.bmi p{
+    font-weight: 600;
+    color: var(--white);
+}
+
+.desc{
+    width: 14rem;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+}
+
+.curve-left{
+    position: absolute;
+    top: -40%;
+    right: 13%;
+}
+
+.curve-left img{
+    width: 5.8rem !important;
+}
+
+.bmi-meaning-container{
+    position: relative;
+    margin-top: 3rem !important;
+    margin-bottom: 5rem;
+}
+
+.bmi-meaning{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 0;
+    padding: 2rem 0rem;
+}
+
+.bmi-meaning-container img{
+    width: 35.25rem;
+    height: 33.3125rem;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+
+.bmi-meaning-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 8rem;
+}
+
+.bmi-meaning-text h3{
+    width: 90%;
+}
+
+.bmi-meaning-text p{
+    width: 29rem;
+}
+
+
+.steps{
+    margin: 3rem 1.5rem;
+    background: var(--overlay-blue);
+    border-radius: 2.1875rem;
+    padding: 3rem 1.5rem;
+}
+
+.steps img{
+    margin-bottom: 2.2rem;
+}
+
+.steps h3{
+    margin-bottom: 1.5rem;
+}
+
+.steps-container{
+    padding: 0rem 1rem;
+    padding-left: 4.2rem;
+}
+
+.steps-p{
+    width: 20rem;
+}
+
+.steps-p1{
+    width: 22.3rem;
+}
+
+.limitations{
+    padding: 0rem 5rem;
+    margin: 7rem 0rem;
+    margin-left: 1.5rem;
+    display: flex;
+    gap: 8rem;
+}
+
+.limitations-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.limitations-text p{
+    width: 33rem;
+}
+
+.curve-right{
+    position: absolute;
+    top: 30%;
+    right: 50%;
+}
+
+.curve-right img{
+    width: 5.8rem !important;
+}
+
+.cards{
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+    border-radius: 1rem;
+    background: var(--white);
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-body{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+}
+
+.icon{
+    display: flex;
+    gap: 1rem;
+}
+
+.icon h5{
+    margin-top: 0.3rem;
+}
+
+.icon-irr h5{
+    margin-top: 0.46rem !important;
+}
+
+.dual-cards{
+    display: flex;
+    margin-left: -23rem;
+    gap: 2rem;
+}
+
+.dual-cards2{
+    display: flex;
+    margin-left: -30rem;
+    gap: 2rem;
+}
+
+.tab {
+    display: none;
+}
+
+.steps-mol{
+    display: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero{
+        margin-bottom: 50%;
+    }
+
+    .side-container{
+        width: 100%;
+        background: var(--overlay-blue);
+        border-radius: 0rem 0rem 2.186rem 2.185rem;
+        margin-left: 0rem;
+        padding-bottom: 10rem;
+    }    
+
+    .side-elements{
+        padding: 5rem 2rem !important;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding-bottom: 12rem;
+    }
+    
+    .logo{
+        width: 4rem;
+        margin: auto;
+    }
+    
+    .side-elements-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+
+    .bmi-card{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        margin-left: -46%;
+        background: var(--white);
+        box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+        width: 92%;
+        border-radius: 1rem;
+    }
+
+    .radios{
+        padding: 0rem 2rem;
+        display: flex;
+        gap: 15rem;
+    }
+
+    .input-field{
+        margin-top: 0.4rem;
+        padding: 1rem 1.4rem;
+        width: 100%;
+        border-radius: 0.75rem;
+        border: 2px solid #D8E2E7;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+    .side-elements-text p{
+        width: fit-content;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--dark-electric-blue);
+    }
+
+    .desc{
+        width: 17rem;
+        padding-right: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .bmi-meaning{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+        margin-left: 0;
+        padding: 2rem 0rem;
+    }
+
+    .bmi-meaning-container img{
+        width: 31.25rem;
+        height: 29.3125rem;
+        margin-left: -9.5rem;
+    }
+
+
+    .bmi-meaning-text h3{
+        width: fit-content;
+    }
+    
+
+    .bmi-meaning-text p{
+        width: 96%;
+    }
+
+    .curve-left{
+        display: none;
+    }
+
+    .steps{
+        display: none;
+    }
+
+    .steps-p{
+        width: fit-content;
+    }
+
+    .steps-p1{
+        width: 95%;
+    }
+
+    .steps-mol{
+        margin: 3rem 0rem;
+        background: var(--overlay-opacity);
+        display: flex;
+    }
+
+    .col-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 3.75rem 2.44rem 3.75rem 2.69rem !important;
+    }
+
+    .info{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .limitations{
+        display: none;
+    }
+
+    .tab{
+        display: block;
+        margin: 2rem 2.69rem;
+    }
+
+    .small-cards{
+        padding-bottom: 4.88rem;
+    }
+
+    .limitations-text{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .limitations-text h3{
+        margin: auto !important;
+    }
+
+    .limitations-text p{
+        width: 90% !important;
+        margin: auto;
+        text-align: center;
+
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .hero{
+        margin-bottom: 130%;
+    }
+
+    .side-container{
+        width: 100%;
+        background: var(--overlay-blue);
+        border-radius: 0rem 0rem 2.186rem 2.185rem;
+        margin-left: 0rem;
+        padding-bottom: 10rem;
+    }    
+
+    .side-elements{
+        padding: 0 1.5rem !important;
+        padding-top: 1.2rem !important;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 5rem !important;
+    }
+    
+    .logo{
+        width: 2.5rem;
+        margin: auto;
+    }
+    
+    .side-elements-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: auto;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .side-elements-text h1{
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 110%;
+        color: var(--gunmetal);
+    }
+    
+    .side-elements-text p{
+        width: 100%;
+        margin: auto;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--dark-electric-blue);
+    }
+
+    .bmi-card{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        margin-left: -46%;
+        background: var(--white);
+        box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+        width: 92%;
+        border-radius: 1rem;
+    }
+
+    .title{
+        padding: 1rem 2rem !important;
+        padding-top: 2rem !important;
+        font-size: 1.5rem;
+    }
+    
+    .radio-box p{
+        padding: 1rem 1.4rem;
+        padding-bottom: 0rem;
+        font-size: 1rem;
+    }
+    
+    .radio-box{
+        display: flex;
+    }
+    
+    .radio-box input{
+        width: 1.93rem;
+    }
+
+    .radios{
+        padding: 0rem 2rem;
+        display: flex !important;
+        flex-direction: row;
+        gap: 3.2rem;
+    }
+
+    form{
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .input-field{
+        margin-top: 0.4rem;
+        padding: 1rem 1.4rem;
+        width: 100%;
+        border-radius: 0.75rem;
+        border: 2px solid #D8E2E7;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .results{
+        margin: 0rem 2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+        padding: 1.6rem 1.8rem;
+        padding-bottom: 1rem;
+        color: var(--white);
+        border-radius:1rem;
+    }
+
+    .calculated-answer{
+        margin: 0rem 2rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+        color: var(--white);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 0.7rem !important;
+    }
+
+    .bmi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.5rem;
+        align-self: stretch;
+    }
+
+    .desc{
+        width: 13rem;
+        padding-right: 0;
+        margin-top: 0rem;
+        align-self: stretch;
+    }
+
+    .bmi-meaning{
+        flex-direction: column;
+    }
+
+    .bmi-meaning-container img{
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        margin-right: 0;
+    }
+
+    .bmi-meaning-text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .bmi-meaning-text h3{
+        font-size: 2rem;
+    }
+    
+    .bmi-meaning-text p{
+        width: 100%;
+    }
+
+    .steps{
+        background: var(--overlay-opacity);
+        border-radius: 0;
+        width: 100%;
+        margin: 0rem 0rem;
+        margin-bottom: 4rem;
+    }
+    
+    .steps img{
+        margin-bottom: 2.2rem;
+    }
+    
+    .steps h3{
+        margin-bottom: 1.5rem;
+    }
+    
+    .steps-container{
+        padding: 0rem 0;
+        padding-left: 0;
+    }
+    
+    .steps-p{
+        width: 100%;
+    }
+    
+    .steps-p1{
+        width: 100%;
+    }
+    
+    .limitations{
+        display: none !important;
+    }
+
+    .tab{
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    .limitations-text{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 1.81rem;
+    }
+
+    .limitations-text h3{
+        margin: auto !important;
+        font-size: 2rem;
+    }
+
+    .limitations-text p{
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .curve-left, .curve-right{
+        display: none;
+    }
+}
