@@ -31,7 +31,7 @@ I am happy to say, I fulfilled all the requirements.
 ### Links
 
 - Solution URL: (https://github.com/danokundaye/BMI-calculator-challenge-solution)
-- Live Site URL: (bmiri.netlify.app)
+- Live Site URL: (https://danokundaye.github.io/BMI-calculator-challenge-solution)
 
 ### Built with
 
