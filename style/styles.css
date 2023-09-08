@@ -627,7 +627,7 @@ box-sizing: border-box;
 @media (min-width: 320px) and (max-width: 767px) {
 
     .hero{
-        margin-bottom: 130%;
+        margin-bottom: 150%;
     }
 
     .side-container{
@@ -705,7 +705,7 @@ box-sizing: border-box;
     }
     
     .radio-box input{
-        width: 1.93rem;
+        width: 2rem !important;
     }
 
     .radios{
